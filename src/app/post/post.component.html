@@ -1,0 +1,13 @@
+<h1>{{post?.title}}</h1>
+<img
+  class="img-responsive"
+  src="{{post?.imgPatch}}"
+  width="1300px"
+  alt=""
+/>
+<p>{{ post?.description }}</p>
+
+<p>Author: {{ post?.author }}</p>
+<p>Date: {{ post?.dateCreated }}</p>
+<button class="btn btn-primary" (click)="onEdit()">Edit</button> 
+<button class="btn btn-danger" (click)="delete()">Delete</button>
